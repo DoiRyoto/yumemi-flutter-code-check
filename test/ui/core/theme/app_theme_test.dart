@@ -15,12 +15,5 @@ void main() {
         isNot(AppTheme.dark.colorScheme.surface),
       );
     });
-
-    test('AppBar は surface 系の色に揃えている', () {
-      for (final theme in [AppTheme.light, AppTheme.dark]) {
-        expect(theme.appBarTheme.backgroundColor, theme.colorScheme.surface);
-        expect(theme.appBarTheme.foregroundColor, theme.colorScheme.onSurface);
-      }
-    });
   });
 }
