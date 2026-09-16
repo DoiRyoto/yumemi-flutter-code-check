@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yumemi_flutter_code_check/l10n/gen/app_localizations.dart';
+import 'package:yumemi_flutter_code_check/ui/core/theme/app_theme.dart';
 
 void main() {
   runApp(const ProviderScope(child: App()));
@@ -15,7 +16,8 @@ class App extends StatelessWidget {
       onGenerateTitle: (context) => L10n.of(context).appTitle,
       localizationsDelegates: L10n.localizationsDelegates,
       supportedLocales: L10n.supportedLocales,
-      // TODO(setup): Theme / ThemeMode（ダークモード対応）を定義する
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
       // TODO(setup): home を検索画面に差し替える
       home: const _PlaceholderPage(),
     );
