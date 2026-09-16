@@ -77,3 +77,7 @@ app.*.map.json
 **/ios/Flutter/flutter_export_environment.sh
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
+
+# コード生成物。コミットせず、セットアップ時と CI で毎回生成する（README 参照）
+*.freezed.dart
+*.g.dart

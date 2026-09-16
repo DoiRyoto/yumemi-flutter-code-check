@@ -1,7 +1,7 @@
 name: yumemi_flutter_code_check
-description: "A new Flutter project."
-publish_to: 'none'
-version: 0.1.0+1
+description: "キーワードから GitHub リポジトリを検索する Flutter アプリ（ゆめみ Flutter エンジニアコードチェック課題）"
+publish_to: "none"
+version: 1.0.0+1
 
 environment:
   sdk: ^3.13.3
@@ -9,11 +9,28 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_riverpod: ^3.4.3
+  riverpod_annotation: ^4.0.7
+  # 課題要件により GitHub API のラッパーを使えないため、薄い HTTP クライアントのみ
+  http: ^1.6.0
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.12.0
+  intl: ^0.20.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  build_runner: ^2.16.1
   flutter_lints: ^6.0.0
+  freezed: ^4.0.1
+  json_serializable: ^6.14.1
+  riverpod_generator: ^4.0.9
+  mocktail: ^1.0.5
 
 flutter:
   uses-material-design: true
+  generate: true
