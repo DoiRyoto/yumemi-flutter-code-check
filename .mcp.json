@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "dart-fvm": {
+      "type": "stdio",
+      "command": "fvm",
+      "args": [
+        "dart",
+        "mcp-server"
+      ],
+      "env": {}
+    }
+  }
+}

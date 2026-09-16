@@ -23,6 +23,10 @@ migrate_working_dir/
 # FVM
 .fvm/
 
+# Claude Code
+# 共有する設定（settings.json / .mcp.json / CLAUDE.md）は追跡し、個人設定だけ除外する
+.claude/settings.local.json
+
 # Flutter / Dart / Pub
 **/doc/api/
 **/ios/Flutter/.last_build_id
