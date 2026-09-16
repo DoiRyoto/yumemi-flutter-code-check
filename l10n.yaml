@@ -1,0 +1,8 @@
+arb-dir: lib/l10n
+template-arb-file: app_ja.arb
+output-dir: lib/l10n/gen
+output-localization-file: app_localizations.dart
+output-class: L10n
+# 翻訳漏れを CI で検知するために出力する
+untranslated-messages-file: l10n_untranslated.json
+nullable-getter: false

@@ -1,0 +1,8 @@
+{
+  "@@locale": "ja",
+
+  "appTitle": "GitHub リポジトリ検索",
+  "@appTitle": {
+    "description": "アプリ名。AppBar やタスクスイッチャーに表示される"
+  }
+}
