@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- GitHub API を呼ぶために必要。debug / profile のマニフェストにしか無いと
+         release ビルドだけ通信できなくなる。 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:label="yumemi_flutter_code_check"
         android:name="${applicationName}"
